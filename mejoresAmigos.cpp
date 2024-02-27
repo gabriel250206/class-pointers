@@ -66,7 +66,7 @@ void Persona::asignarMejorAmigo(Persona &amiguibi){
 /*
 
 for(const Pesrona pers:gente) con un vector tipo persona llamado gente para irlos sacando {para cada persona de tipo persona en gente, tambien puedes cambiar const persona por auto}
-    log(&pers)
+    log(&pers) pers es la variable, como i
     log(pers.nombre)
 
 
