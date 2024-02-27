@@ -23,13 +23,17 @@ public:
     agregar parámetros necesarios para poder recibir una Persona en específico
     y asignarla como mejor amigo. 
     */
-    void asignarMejorAmigo(...);
+    void asignarMejorAmigo(Persona &amiguibi);
     
 };
 
 int main()
 {
-
+    Persona p1,p2;
+    Persona* ptrp;
+    p2.nombre="ignacio_allende";
+    p1.asignarMejorAmigo(p2);
+    cout<< p1.ptrMejorAmigo->nombre <<endl;
     return 0;
 }
 
@@ -52,4 +56,19 @@ int Persona::getEdad()
 
 /*
     Implementar función void asignarMejorAmigo(...)
+*/
+void Persona::asignarMejorAmigo(Persona &amiguibi){
+    this->ptrMejorAmigo=&amiguibi;
+}
+
+
+
+/*
+
+for(const Pesrona pers:gente) con un vector tipo persona llamado gente para irlos sacando {para cada persona de tipo persona en gente, tambien puedes cambiar const persona por auto}
+    log(&pers)
+    log(pers.nombre)
+
+
+
 */
